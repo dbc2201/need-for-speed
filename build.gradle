@@ -7,12 +7,12 @@ compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
 
 repositories {
-    mavenCentral()
+  mavenCentral()
 }
 
 dependencies {
-    testImplementation 'junit:junit:4.13.2'
-    testImplementation 'org.assertj:assertj-core:3.22.0'
+    testImplementation "junit:junit:4.13"
+    testImplementation "org.assertj:assertj-core:3.15.0"
 }
 
 test {

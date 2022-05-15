@@ -9,7 +9,7 @@ public class NeedForSpeedTest {
         int batteryDrain = 2;
         var car = new NeedForSpeed(speed, batteryDrain);
 
-        assertThat(car.distanceDriven()).isEqualTo(0);
+        assertThat(car.distanceDriven()).isZero();
     }
 
     @Test
@@ -79,7 +79,7 @@ public class NeedForSpeedTest {
     @Test
     public void nitro_car_has_not_driven_any_distance() {
         var car = NeedForSpeed.nitro();
-        assertThat(car.distanceDriven()).isEqualTo(0);
+        assertThat(car.distanceDriven()).isZero();
     }
 
     @Test
@@ -160,4 +160,3 @@ public class NeedForSpeedTest {
         assertThat(race.carCanFinish(car)).isFalse();
     }
 }
-

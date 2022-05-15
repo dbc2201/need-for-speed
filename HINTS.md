@@ -33,9 +33,6 @@
 - Consider what to do when the battery has been drained before reaching the finish line.
 
 [constructor-syntax]: https://docs.oracle.com/javase/tutorial/java/javaOO/constructors.html
-
 [instance-constructors]: https://docs.oracle.com/javase/tutorial/java/javaOO/objectcreation.html
-
 [while]: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/while.html
-
 [fields]: https://docs.oracle.com/javase/tutorial/java/javaOO/variables.html

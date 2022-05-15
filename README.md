@@ -1,7 +1,8 @@
 # Need for Speed
 
-Welcome to Need for Speed on Exercism's Java Track. If you need help running the tests or submitting your code, check
-out `HELP.md`. If you get stuck on the exercise, check out `HINTS.md`, but try and solve it without using those first :)
+Welcome to Need for Speed on Exercism's Java Track.
+If you need help running the tests or submitting your code, check out `HELP.md`.
+If you get stuck on the exercise, check out `HINTS.md`, but try and solve it without using those first :)
 
 ## Introduction
 
@@ -19,8 +20,8 @@ class Library {
     }
 }
 
-    // This will call the constructor
-    var library = new Library();
+// This will call the constructor
+var library = new Library();
 ```
 
 Like regular methods, constructors can have parameters. Constructor parameters are usually stored as (private) fields to
@@ -38,8 +39,8 @@ class Building {
     }
 }
 
-    // Call a constructor with two arguments
-    var largeBuilding = new Building(55, 6.2);
+// Call a constructor with two arguments
+var largeBuilding = new Building(55, 6.2);
 ```
 
 ## Instructions
@@ -63,9 +64,9 @@ Allow creating a remote controller car by defining a constructor for the `NeedFo
 the car in meters and the battery drain percentage as its two parameters (both of type `int`):
 
 ```java
-int speed=5;
-        int batteryDrain=2;
-        var car=new NeedForSpeed(speed,batteryDrain);
+int speed = 5;
+int batteryDrain = 2;
+var car = new NeedForSpeed(speed, batteryDrain);
 ```
 
 ## 2. Creating a race track
@@ -74,8 +75,8 @@ Allow creating a race track by defining a constructor for the `RaceTrack` class 
 meters as its sole parameter (which is of type `int`):
 
 ```java
-int distance=800;
-        var raceTrack=new RaceTrack(distance);
+int distance = 800;
+var raceTrack = new RaceTrack(distance);
 ```
 
 ## 3. Drive the car
@@ -84,12 +85,12 @@ Implement the `NeedForSpeed.drive()` method that updates the number of meters dr
 implement the `NeedForSpeed.distanceDriven()` method to return the number of meters driven by the car:
 
 ```java
-int speed=5;
-        int batteryDrain=2;
-        var car=new NeedForSpeed(speed,batteryDrain);
-        car.drive();
+int speed = 5;
+int batteryDrain = 2;
+var car = new NeedForSpeed(speed, batteryDrain);
+car.drive();
 
-        car.distanceDriven();
+car.distanceDriven();
 // => 5
 ```
 
@@ -99,12 +100,12 @@ Update the `NeedForSpeed.drive()` method to drain the battery based on the car's
 the `NeedForSpeed.batteryDrained()` method that indicates if the battery is drained:
 
 ```java
-int speed=5;
-        int batteryDrain=2;
-        var car=new NeedForSpeed(speed,batteryDrain);
-        car.drive();
+int speed = 5;
+int batteryDrain = 2;
+var car = new NeedForSpeed(speed, batteryDrain);
+car.drive();
 
-        car.batteryDrained();
+car.batteryDrained();
 // => false
 ```
 
@@ -114,9 +115,9 @@ The best-selling remote control car is the Nitro, which has a stunning top speed
 4%. Implement the (static) `NeedForSpeed.nitro()` method to return this type of car:
 
 ```java
-var car=NeedForSpeed.nitro();
-        car.drive();
-        car.distanceDriven();
+var car = NeedForSpeed.nitro();
+car.drive();
+car.distanceDriven();
 // => 50
 ```
 
@@ -127,14 +128,14 @@ crossed the finish line. Implement the `RaceTrack.carCanFinish()` method that ta
 parameter and returns `true` if the car can finish the race; otherwise, return `false`:
 
 ```java
-int speed=5;
-        int batteryDrain=2;
-        var car=new NeedForSpeed(speed,batteryDrain);
+int speed = 5;
+int batteryDrain = 2;
+var car = new NeedForSpeed(speed, batteryDrain);
 
-        int distance=100;
-        var race=new RaceTrack(distance);
+int distance = 100;
+var race = new RaceTrack(distance);
 
-        race.carCanFinish(car);
+race.carCanFinish(car);
 // => true
 ```
 
